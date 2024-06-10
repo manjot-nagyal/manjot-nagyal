@@ -1,61 +1,79 @@
-/* General styling */
+/* General styling for the body and HTML */
 body, html {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif; /* Helvetica is primary, with Arial as the fallback */
     margin: 0;
     padding: 0;
-    background: #35354B; /* Dark background for the whole page */
-    color: #F1F1F8; /* Light text color for good contrast */
+    background-color: #35354B; /* Dark gray background for the whole page */
+    color: #F1F1F8; /* Light grayish-white text for good contrast */
     line-height: 1.6;
 }
 
-/* Header and Navigation Styles */
+/* Header styling */
 header {
-    background: #29293d; /* Slightly lighter dark shade for the header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #35354B; /* Slightly lighter shade of dark gray for the header */
+    padding: 1rem 0;
+    text-align: center;
 }
 
+/* Navigation menu styles */
 nav {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    background-color: #F1F1F8; /* Even lighter shade of gray for navigation */
 }
 
 nav a {
+    color: #cfcfcf; /* Soft white for navigation links */
     text-decoration: none;
-    color: #F1F1F8;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
 }
 
 nav a:hover, nav a:focus {
-    color: #D6D6E7; /* Lighter grey for hover/focus */
+    color: #DEDEF6; /* Bright white on hover/focus for better visibility */
 }
 
-/* Main Section Styles */
+/* Main content area styling */
 main {
-    padding-top: 60px;
-}
-
-.intro, .articles {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 960px;
+    margin: 20px auto;
 }
 
-.intro h1 {
-    color: #A5A5C7; /* Lighter purple for headings */
+/* Section headers within the main content */
+section h1, section h2 {
+    color: #F1F1F8; /* Maintaining soft white for headers */
 }
 
-/* Footer Styles */
+/* Lists style for clarity */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for embedded objects like PDFs */
+object, embed {
+    width: 100%;
+    height: 600px; /* Adequate height for embedded content such as PDFs */
+}
+
+/* Footer styling */
 footer {
+    background-color: #35354B;
+    color: #F1F1F8;
     text-align: center;
-    padding: 10px 0;
-    background: #29293d; /* Consistent with header */
+    padding: 1rem 0;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 }
