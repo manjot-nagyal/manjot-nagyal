@@ -1,0 +1,60 @@
+/* General styling */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Main Section Styles */
+main {
+    padding-top: 60px;
+}
+
+.intro, .articles {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f8f9fa;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
