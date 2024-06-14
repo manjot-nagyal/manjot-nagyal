@@ -1,0 +1,79 @@
+/* General styling for the body and HTML */
+body, html {
+    font-family: 'Helvetica', Arial, sans-serif; /* Helvetica is primary, with Arial as the fallback */
+    margin: 0;
+    padding: 0;
+    background-color: #35354B; /* Dark gray background for the whole page */
+    color: #F1F1F8; /* Light grayish-white text for good contrast */
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #35354B; /* Slightly lighter shade of dark gray for the header */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation menu styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F1F1F8; /* Even lighter shade of gray for navigation */
+}
+
+nav a {
+    color: #cfcfcf; /* Soft white for navigation links */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    color: #DEDEF6; /* Bright white on hover/focus for better visibility */
+}
+
+/* Main content area styling */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+/* Section headers within the main content */
+section h1, section h2 {
+    color: #F1F1F8; /* Maintaining soft white for headers */
+}
+
+/* Lists style for clarity */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for embedded objects like PDFs */
+object, embed {
+    width: 100%;
+    height: 600px; /* Adequate height for embedded content such as PDFs */
+}
+
+/* Footer styling */
+footer {
+    background-color: #35354B;
+    color: #F1F1F8;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
