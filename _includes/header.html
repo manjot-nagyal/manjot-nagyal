@@ -16,12 +16,14 @@
     <div class="row">
       <div class="col-lg-12">
         <div id="p5-sketch"></div> <!-- Container for the p5.js sketch -->
-        <script src="{{ '/js/p5/p5.min.js' }}"></script>
-        <script src="{{ '/js/p5/DNA.js' }}"></script>
-        <script src="{{ '/js/p5/population.js' }}"></script>
-        <script src="{{ '/js/p5/sketch.js' }}"></script>
         
-        <link rel="stylesheet" href="{{ '/css/p5-style.css' }}" />
+        <!-- Make sure paths are correct and accessible -->
+        <script src="{{ site.baseurl }}/js/p5/p5.min.js"></script>
+        <script src="{{ site.baseurl }}/js/p5/DNA.js"></script>
+        <script src="{{ site.baseurl }}/js/p5/population.js"></script>
+        <script src="{{ site.baseurl }}/js/p5/sketch.js"></script>
+        
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/p5-style.css" />
         
         <div class="intro-text">
           <span class="skills">{{ site.skills }}</span>
@@ -30,4 +32,3 @@
     </div>
   </div>
 </header>
-
