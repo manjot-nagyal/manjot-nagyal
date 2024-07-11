@@ -1,10 +1,10 @@
 # Site settings
-title: Bioinformatician
+title: Manjot Nagyal
 email: your-email@domain.com
 url: https://manjot-nagyal.github.io/manjot-nagyal/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
-skills: "Genomics Guru - Data Decoder - Passionate Programmer"
+skills: ""
 meta_author: Nagyal Manjot
 
 # Google webmaster tools
@@ -25,30 +25,24 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 35354B #DEDEF6 #18bc9c #80B3FF
-  primary-rgb: "222,222,246" #"24,288,156" #"128,179,255"
-  secondary: 35354B #2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 132454 #DEDEF6 #18bc9c #80B3FF
+  primary-rgb: "244,96,54" #"24,288,156" #"128,179,255"
+  secondary: 132454 #2c3e50 #FD6E8A
+  secondary-dark: FA3A00 #A2122F
 
 # Footer settings
 footer:
   copyright: Manjot Nagyal
-  location: Location
-  social: Around the Web
-  credits: Adapted from Freelancer Jekyll theme
+  # location: Location
+  # social: Around the Web
+  # credits: Adapted from Freelancer Jekyll theme
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: linkedin
+    url: https://www.linkedin.com/in/manjot-nagyal
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/manjot-nagyal
 
 # Postal address (add as many lines as necessary)
 address:
@@ -56,7 +50,7 @@ address:
   - line: 
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown

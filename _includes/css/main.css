@@ -35,47 +35,42 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
+hr.dna-binary {
+    margin: 25px auto;
     padding: 0;
     max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
+    border: 0; /* Ensure no border is drawn */
+    height: 30px; /* Adjust height to fit the icon */
+    position: relative; /* Needed for positioning the :after pseudo-element */
     overflow: visible;
+    background: transparent; /* No background */
 }
 
-hr.star-light:after,
-hr.star-primary:after {
-    /* content: "\f005"; */
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(45deg);
+    }
+    100% {
+        transform: scale(1) rotate(45deg);
+    }
+}
+
+hr.dna-binary:after {
     content: "\f471"; /* FontAwesome unicode for DNA helix */
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
+    font-family: 'FontAwesome'; /* Ensure this matches the actual font family name loaded */
+    font-size: 2em; /* Size of the icon */
+    color: #fff; /* Icon color */
+    position: absolute; /* Absolute positioning relative to the parent hr */
+    top: 0; /* Center vertically relative to the parent */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%) rotate(90deg); /* Center, rotate and handle initial scaling */
+    animation: pulse 2s infinite ease-in-out; /* Applying the pulsing animation */
 }
 
-hr.star-light {
-    border-color: #fff;
-}
 
-hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
-
-hr.star-primary {
-    border-color: #{{ site.color.secondary }};
-}
-
-hr.star-primary:after {
-    color: #{{ site.color.secondary }};
-    background-color: #fff;
-}
 
 .img-centered {
     margin: 0 auto;
@@ -165,6 +160,8 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+
+
 }
 
 .navbar-default,
