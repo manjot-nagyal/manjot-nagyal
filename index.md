@@ -6,7 +6,7 @@ permalink: /
 
 <div class="about-container">
   <div class="about-image">
-    <img src="/images/profile.jpg" alt="Manjot Nagyal" class="profile-image">
+    <img src="/images/profile.png" alt="Manjot Nagyal" class="profile-image">
   </div>
   <div class="about-content">
   <p>Data is everywhere—even in the smallest microbial communities. I harness it to develop computational solutions for challenges in human and environmental health. 
