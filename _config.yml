@@ -1,0 +1,108 @@
+# Site settings
+locale: en-US
+title: Manjot Nagyal
+description: 
+baseurl: # the subpath of your site, e.g. "/blog"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+logo: /images/logo.png
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 200
+mathjax: true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /blog/page:num/
+
+# Search
+search_full_content: true
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Front Matter Defaults
+defaults:
+  # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
+  # Pages defaults
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+# Site Author
+author:
+  name: Manjot Nagyal
+  picture: /images/profile.jpg
+  email:
+  twitter:
+  links:
+    - title: GitHub
+      url: https://github.com/manjot-nagyal
+      icon: fab fa-github-square
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/manjot-nagyal
+      icon: fab fa-linkedin
+
+# Footer Links
+footer_links:
+  - title: GitHub
+    url: https://github.com/manjot-nagyal
+    icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/manjot-nagyal
+    icon: fab fa-linkedin
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  art:
+    output: true
+    permalink: /:collection/:path/
+
+# Theme
+theme: jekyll-theme-so-simple
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

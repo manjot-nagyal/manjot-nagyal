@@ -1,0 +1,72 @@
+---
+layout: collection
+title: Projects
+permalink: /projects/
+collections:
+  - projects
+entries_layout: grid
+---
+
+<div class="projects-grid">
+  {% for project in site.projects %}
+    <div class="project-item">
+      <a href="{{ project.url | relative_url }}">
+        {% if project.image %}
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image">
+        {% endif %}
+        <div class="project-overlay">
+          <h3>{{ project.title }}</h3>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: #f5f5f5;
+    min-height: 200px;
+  }
+
+  .project-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .project-item:hover .project-overlay {
+    opacity: 1;
+  }
+
+  .project-overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+</style>

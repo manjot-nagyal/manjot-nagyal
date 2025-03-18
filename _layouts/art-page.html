@@ -1,0 +1,62 @@
+---
+layout: page
+---
+
+<div class="main-image">
+  <img src="{{ page.image }}" alt="{{ page.title }}">
+</div>
+
+<div class="art-content">
+  {{ content }}
+</div>
+
+<style>
+
+  .main-image {
+    /* center image */
+    max-width: auto;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .main-image img {
+    width: 75%;
+    height: auto;
+  }
+    
+  .art-content {
+    max-width: auto;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .art-content h2 {
+    margin-top: 0;
+  }
+
+  .art-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .art-content li {
+    margin: 10px 0;
+  }
+
+  .art-content img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .art-content .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .art-content .gallery img {
+    width: 250px;
+    height: auto;
+  }
+</style>

@@ -1,0 +1,70 @@
+---
+layout: collection
+title: Art Gallery
+permalink: /art/
+collections:
+  - art
+entries_layout: grid
+---
+
+<div class="art-grid">
+  {% for artwork in site.art %}
+    <div class="art-item">
+      <a href="{{ artwork.url | relative_url }}">
+        <img src="{{ artwork.image | relative_url }}" alt="{{ artwork.title }}" class="art-image">
+        <div class="art-overlay">
+          <h3>{{ artwork.title }}</h3>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .art-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .art-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .art-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .art-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .art-item:hover .art-overlay {
+    opacity: 1;
+  }
+
+  .art-overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+</style>
