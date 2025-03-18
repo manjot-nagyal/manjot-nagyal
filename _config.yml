@@ -2,8 +2,8 @@
 locale: en-US
 title: Manjot Nagyal
 description: 
-baseurl: # the subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: /manjot-nagyal
+url: "https://manjot-nagyal.github.io/manjot-nagyal"
 logo: /images/logo.png
 date_format: "%B %-d, %Y"
 read_time: true
