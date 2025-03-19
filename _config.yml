@@ -3,7 +3,7 @@ locale: en-US
 title: Manjot Nagyal
 description: 
 baseurl: /manjot-nagyal
-url: "https://manjot-nagyal.github.io/manjot-nagyal"
+url: "https://manjot-nagyal.github.io/"
 logo: /images/logo.png
 date_format: "%B %-d, %Y"
 read_time: true

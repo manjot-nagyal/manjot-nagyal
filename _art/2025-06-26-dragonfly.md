@@ -10,6 +10,6 @@ tags: [digital art, illustration, creative process]
 ## Technical Details
 - Medium: Digital illustration
 - Software: Sketchbook Pro on a iPad Air with an Apple Pencil
-- Date completed: 2024-06-26
+
 
 
