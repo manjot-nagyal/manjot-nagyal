@@ -4,6 +4,7 @@ title: Manjot Nagyal
 description: 
 baseurl: /manjot-nagyal
 url: "https://manjot-nagyal.github.io/"
+repository: manjot-nagyal/manjot-nagyal
 logo: /images/logo.png
 date_format: "%B %-d, %Y"
 read_time: true
@@ -65,6 +66,8 @@ author:
     - title: LinkedIn
       url: https://www.linkedin.com/in/manjot-nagyal
       icon: fab fa-linkedin
+
+google_analytics: G-1546N8CW61
 
 # Footer Links
 footer_links:
